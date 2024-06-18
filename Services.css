@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kaisei+Tokumin&family=Major+Mono+Display&family=Play:wght@400;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&family=Orbitron:wght@400..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+body{ 
+  background-color: rgb(0, 0, 0);
+}
+.Heading{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;   
+    font-family: "Marcellus SC", serif;
+    font-size: 2.5rem;   
+    font-weight: 500;
+    height: 15vh;   
+    color: rgb(255, 255, 255);
+    width: 100vw;  
+}     
+
+.Main-Sec { 
+    height: 100%; 
+    width: 100%; /* Set the height of the Main-Sec div */
+    position: relative;
+    overflow: hidden; 
+}
+
+.Main-Sec img { 
+    width: 100%;
+    height: 100%; /* Set the image height equal to its parent div height */
+    object-fit: cover;
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+} 
+
+  
+.Main-Sec .image-container {
+    position: relative;
+  }
+  
+  .Main-Sec .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+.Main-Sec h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;  
+    width: 100%;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+    font-size: 7rem; 
+    z-index: 2;
+    color: white; /* Optional: Set text color */
+    text-align: center; /* Optional: Center align the text */
+}  
+.Main-Sec p{  
+    position: absolute;
+    top: 30%;
+    left: 67%;   
+    width: 100%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    font-size: 1.5rem;
+    color: rgb(216, 216, 216); /* Optional: Set text color */
+    text-align: center;
+} 
+.Campaigns{     
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;    
+    flex-wrap: wrap; 
+    justify-content: center;
+}  
+.campaign-image{ 
+  height: 56vh; 
+  width: 28vw; 
+  margin: 5px 10px;
+  text-align: center; 
+}   
+.btn-talk{ 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+} 
+#btn{  
+  margin: 15px 10px;
+  width: 20vw;
+}
+.btn{ 
+  width: 94%;   
+  height: 7vh;  
+  font-weight: 100;
+  color: white;  
+  font-size: 1.1rem;
+  font-family: "Jura", sans-serif;
+  background-color: rgba(0, 0, 0); 
+  border: 1px solid rgb(255, 255, 255);
+}  
+#btn:hover{ 
+  color: rgb(0, 0, 0);  
+  background-color: #ffddf6;  
+  transition: 0.65s ease; 
+}
+.service:hover .btn{  
+  color: rgb(0, 0, 0);  
+  background-color: #ffddf6;  
+  transition: 0.65s ease; 
+}
+    .service {
+        height: 67vh;
+        width: 390px;
+        background-color: rgb(0, 0, 0,0); 
+        margin: 1px 2px;
+        text-align: center;  
+        position: relative;
+    }  
+    .service:hover{ 
+      background-color: rgb(0, 0, 0,0.4); 
+      transition: 0.65s ease; 
+    }
+    .service .image-container {
+    position: relative;
+    } 
+    /* .service .image-container::before {
+      content: '';
+      position: absolute;
+      top: 19px;
+      left: 10px;
+      width: 95%;
+      height: 89%;
+      /* background-color: rgba(0, 0, 0); } */
+
+    .service h2{  
+      position: absolute;
+      top: 0;
+      left: 0;
+       width: 100%;
+      text-align: center; 
+      justify-content: center;
+      margin: 45% 0; 
+      color: white;   
+      font-size: 3rem;
+      z-index: 2; 
+    }
+/* Media Queries */ 
+@media screen and (max-width: 768px) {
+    .Heading {
+      font-size: 4vw; 
+    height: 10vh;  /* Adjust font size for smaller screens */
+    }    
+    .service{ 
+      height: 71vh;
+    } 
+    #btn{  
+      margin: 15px 10px;
+      width: 28vw;
+    }
+    .Main-Sec h1 {   
+        top: 33%; 
+        font-size: 5rem;
+       }  
+       .btn{ 
+        width: 95%;
+      }
+       .Main-Sec p{ 
+        top: 15%; 
+        font-size: 1rem;
+        } 
+        .Campaigns{   
+        flex-wrap: wrap;
+        }
+   
+  } 
+  @media screen and (max-width: 568px) {
+    .Heading {
+      font-size: 4.5vw;  
+    }  
+    .Main-Sec h1 {  
+        font-size: 4.2rem;  
+        top: 30%;
+       } 
+       .Main-Sec p{ 
+        top: 10%; 
+        font-size: 0.9rem;
+        }
+  }
+  
+  @media screen and (min-width: 1440px) and (max-width: 1920px) { 
+   .Campaigns{ 
+    justify-content: space-around; 
+    position: relative;
+   } 
+   .btn{ 
+    width: 28vw; 
+    margin-left: 0.5vw; 
+   }  
+   #btn{  
+    margin: 15px 10px;
+    width: 38vw;
+  }
+   .service { 
+    margin-left: -55px;
+   }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1030px) {
+    .Heading {
+      font-size: 2rem; /* Adjust font size for medium-sized screens */
+    } 
+    .Main-Sec h1 {  
+        font-size: 5rem;  
+        top: 35%; 
+       } 
+       .Main-Sec p{ 
+        top: 17%;  
+        left: 50%;
+        font-size: 1.5rem;
+        }  
+        .btn{ 
+          width: 95%;
+        }
+        .service{ 
+          width: 90%; 
+          height: 65vh;
+        }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .Heading{
+      font-size: 3rem; /* Adjust font size for larger screens */
+    } 
+  } 
+  @media screen and (max-width: 450px) {
+   
+    .Main-Sec h1 {  
+        font-size: 3.2rem;  
+        top: 32%;
+       }  
+       .Main-Sec p{ 
+        top: 10%;  
+        left: 50%;
+        font-size: 0.8rem;
+        }
+  } 
+  @media screen and (max-width: 350px) {
+   
+    .Main-Sec h1 {  
+        font-size: 3.2rem;  
+        top: 25%; 
+       } 
+       .Main-Sec p{ 
+        top: 3%; 
+        font-size: 0.9rem;
+        }
+  } 
+  @media screen and (min-width: 810px) and (max-width: 1280px) { 
+
+      
+      .campaign-image{ 
+        width: 95%;
+      } 
+      #btn{  
+        margin: 15px 10px;
+        width: 30vw;
+      }
+      } 
+  @media screen and (max-width: 840px) { 
+
+    .service {
+        width: 85%;  
+ 
+    }  
+    .service h2{ 
+      font-size: 4rem;
+    } 
+    .service{ 
+      height: 71vh;
+    }
+    .campaign-image{ 
+      width: 95%; 
+      height: 62vh;
+    } 
+    }  
+
+    @media screen and (max-width: 568px) { 
+
+      .service {
+          width: 80%;  
+      } 
+      .campaign-image{ 
+        width: 95%; 
+        height: 60vh;
+      } 
+      } 
+      @media screen and (max-width: 458px) { 
+
+        .service {
+            width: 92%;   
+            height: 56vh;
+        }  
+        .service h2{ 
+          font-size: 3rem;
+        }
+        .campaign-image{ 
+          width: 95%; 
+          height: 47vh;
+        }   
+        #btn{  
+          margin: 12px 0px;
+          width: 50vw; 
+          height: 5vh;
+        }
+        }  
+        @media screen and (max-width: 395px) { 
+
+          .service {
+              width: 90%;   
+              height: 56vh;
+          } 
+          .campaign-image{ 
+            width: 95%; 
+            height: 47vh;
+          }  
+          } 
+
